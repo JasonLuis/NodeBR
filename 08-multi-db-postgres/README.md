@@ -1,6 +1,6 @@
-http://192.168.99.100:8080 -> para acessar a postgres
-http://192.168.99.100:3000 -> para acessar a mongodb
-
+http://192.168.99.100:8080 -> para acessar o postgres
+http://192.168.99.100:3000 -> para acessar o mongodb
+## --- POSTGRES
 docker run 
     --name postgres 
     -e POSTGRES_USER=jasonluis 
@@ -20,6 +20,9 @@ docker run
     -d \
     adminer
 
+#### Para inicializa-los novamente
+docker start postgres
+docker start adminer
 
 ## --- MONGODB
 docker run \
